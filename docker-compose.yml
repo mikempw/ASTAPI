@@ -1,0 +1,14 @@
+# docker-compose.yml
+
+services:
+  bigip-config-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../application-study-tool/services/otel_collector:/config
+    environment:
+      - CONFIG_FILE=receivers.yaml
+    restart: unless-stopped
