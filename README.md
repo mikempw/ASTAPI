@@ -97,3 +97,8 @@ curl -X DELETE http://localhost:8000/bigip/1
 1.) curl http://localhost:8000/health
 2.) curl http://localhost:8000/config
 ```
+## Troubleshooting
+
+```bash
+1.) docker logs "container id for astgui"
+```
