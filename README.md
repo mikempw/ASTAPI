@@ -90,3 +90,10 @@ curl -X PUT http://localhost:8000/bigip/1 \
 ```JSON
 curl -X DELETE http://localhost:8000/bigip/1
 ```
+
+## Other commands:
+
+```bash
+1.) curl http://localhost:8000/health
+2.) curl http://localhost:8000/config
+```
